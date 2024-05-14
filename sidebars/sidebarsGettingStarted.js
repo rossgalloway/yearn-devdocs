@@ -1,4 +1,4 @@
-module.exports = {
+export default {
   mySidebar: [
     'intro',
     'using-yearn',
@@ -15,32 +15,24 @@ module.exports = {
             {
               type: 'category',
               label: 'yVaults Version 3',
-              items: [
-                'products/yvaults/v3',
-              ],
+              items: ['products/yvaults/v3'],
             },
             {
               type: 'category',
               label: 'yVaults Version 2',
-              items: [
-                'products/yvaults/vault-factory',
-              ],
+              items: ['products/yvaults/vault-factory'],
             },
           ],
         },
         {
           type: 'category',
           label: 'veYFI',
-          items: [
-            'products/veyfi',
-          ],
+          items: ['products/veyfi'],
         },
         {
           type: 'category',
           label: 'yETH',
-          items: [
-            'products/yeth/overview',
-          ],
+          items: ['products/yeth/overview'],
         },
         {
           type: 'category',
@@ -53,7 +45,7 @@ module.exports = {
               items: [
                 'products/ylockers/ycrv/overview',
                 'products/ylockers/ycrv/faq',
-                'products/ylockers/ycrv/guide'
+                'products/ylockers/ycrv/guide',
               ],
             },
             {
@@ -61,7 +53,7 @@ module.exports = {
               label: 'yPRISMA',
               items: [
                 'products/ylockers/yprisma/overview',
-                'products/ylockers/yprisma/farming'
+                'products/ylockers/yprisma/farming',
               ],
             },
           ],
