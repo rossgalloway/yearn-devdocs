@@ -53,7 +53,7 @@ export default {
           label: 'Develop',
         },
         {
-          to: '/vaults/smart-contracts/BaseStrategy',
+          to: 'smart-contracts',
           label: 'Smart Contracts',
         },
         {
@@ -196,9 +196,11 @@ export default {
       '@docusaurus/preset-classic',
       {
         docs: {
+          path: 'docs/getting-started',
           remarkPlugins: [math],
           rehypePlugins: [katex],
-          sidebarPath: './sidebars/sidebars.js',
+          routeBasePath: 'getting-started',
+          sidebarPath: './sidebars/sidebarsGettingStarted.js',
           editUrl:
             'https://github.com/yearn/yearn-devdocs/edit/master/website/',
           breadcrumbs: false,
@@ -230,20 +232,20 @@ export default {
         breadcrumbs: false,
       },
     ],
-    [
-      '@docusaurus/plugin-content-docs',
-      {
-        id: 'getting-started',
-        path: 'docs/getting-started',
-        routeBasePath: 'getting-started',
-        sidebarPath: './sidebars/sidebarsGettingStarted.js',
-        showLastUpdateTime: true,
-        sidebarCollapsed: false,
-        breadcrumbs: false,
-        remarkPlugins: [math],
-        rehypePlugins: [katex],
-      },
-    ],
+    // [
+    //   '@docusaurus/plugin-content-docs',
+    //   {
+    //     id: 'getting-started',
+    //     path: 'docs/getting-started',
+    //     routeBasePath: 'getting-started',
+    //     sidebarPath: './sidebars/sidebarsGettingStarted.js',
+    //     showLastUpdateTime: true,
+    //     sidebarCollapsed: false,
+    //     breadcrumbs: false,
+    //     remarkPlugins: [math],
+    //     rehypePlugins: [katex],
+    //   },
+    // ],
     [
       '@docusaurus/plugin-content-docs',
       {
