@@ -61,6 +61,10 @@ html[data-theme='dark'] {
   overflow: scroll;
 }
 
+code {
+  vertical-align: baseline;
+}
+
 /* ---HEADER--- */
 .header-github-link::before {
   content: '';
