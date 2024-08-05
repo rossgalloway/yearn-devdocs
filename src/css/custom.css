@@ -20,6 +20,8 @@
   --ifm-toc-border-color: transparent;
   --ifm-menu-color-background-active: transparent;
   --ifm-font-family-base: 'Aeonik', 'Roboto', serif;
+  --ifm-navbar-height: 5rem;
+  /* --ifm-menu-link-sublist-icon: url('/img/icons/dropdown-svgrepo-com.svg'); */
 }
 html[data-theme='dark'] {
   --ifm-toc-border-color: transparent;
@@ -28,6 +30,23 @@ html[data-theme='dark'] {
 .menu__list-item-collapsible--active {
   background-color: var(--ifm-menu-color-background-active);
 }
+.menu__link {
+  font-size: 14px;
+}
+/* .menu__list-item-collapsible {
+  flex-direction: row-reverse;
+} */
+.menu__caret:before {
+  background: var(--ifm-menu-link-sublist-icon) 50% / 1.5rem 1.5rem;
+}
+
+.menu__list-item--collapsed .menu__link--sublist:after {
+  background: var(--ifm-menu-link-sublist-icon) 50% / 1.5rem 1.5rem;
+}
+/*
+.menu__list-item--collapsed .menu__caret:before {
+  transform: rotateZ(-90deg);
+} */
 
 #__docusaurus {
   max-width: 1300px;
@@ -36,10 +55,10 @@ html[data-theme='dark'] {
 
 .body {
   font-family: 'Aeonik', 'Roboto', serif;
+  overflow: scroll;
 }
-
-.row {
-  padding: 0 var(--ifm-navbar-item-padding-horizontal);
+.body class data-rh {
+  overflow: scroll;
 }
 
 /* ---HEADER--- */
@@ -57,8 +76,8 @@ html[data-theme='dark'] {
   background-color: var(--ifm-navbar-link-hover-color);
 }
 .header-github-link {
-  padding-right: 4px;
-  padding-left: 0;
+  padding-right: 10px;
+  padding-left: 10px;
 }
 .header-yearn-link::before {
   content: '';
@@ -74,8 +93,8 @@ html[data-theme='dark'] {
   background-color: var(--ifm-navbar-link-hover-color);
 }
 .header-yearn-link {
-  padding-right: 4px;
-  padding-left: 0;
+  padding-right: 10px;
+  padding-left: 10px;
 }
 
 /* ---DOCSEARCH--- */
@@ -127,6 +146,8 @@ html[data-theme='light'] .DocSearch:hover {
 /* ---NAVBAR--- */
 .navbar {
   box-shadow: none;
+  /* padding-top: 18px;
+  margin-bottom: 20px; */
 }
 .navbar__items .navbar__item:first-child {
   margin-left: auto;
@@ -134,7 +155,7 @@ html[data-theme='light'] .DocSearch:hover {
 }
 .navbar__items .navbar__brand {
   /* margin-right: 145px; */
-  min-width: var(--doc-sidebar-width);
+  /* min-width: var(--doc-sidebar-width); */
   margin: 0;
 }
 @media screen and (max-width: 1075px) {
@@ -149,6 +170,7 @@ html[data-theme='light'] .DocSearch:hover {
   margin-right: 0.43em;
   font-weight: 400;
   padding-right: 0;
+  font-size: 14px;
 }
 html[data-theme='dark'] .navbar {
   background-color: var(--ifm-background-color);
