@@ -177,7 +177,7 @@ module.exports = {
         {
           type: 'link',
           label: 'DAO Docs →',
-          href: '/contributing/contribute',
+          href: '/contributing/introduction',
         },
       ],
     },
