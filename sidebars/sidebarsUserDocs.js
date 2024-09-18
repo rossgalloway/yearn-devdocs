@@ -56,7 +56,6 @@ module.exports = {
                 },
               ],
             },
-            'products/yvaults/vault-tokens',
             {
               type: 'doc',
               id: 'products/yvaults/yvaults-faq',
