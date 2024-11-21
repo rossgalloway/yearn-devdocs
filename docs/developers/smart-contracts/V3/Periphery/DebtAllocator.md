@@ -340,7 +340,7 @@ function setManager(address _address, bool _allowed) external virtual onlyGovern
 |Name|Type|Description|
 |----|----|-----------|
 |`_address`|`address`|The address to set mapping for.|
-|`_allowed`|`bool`|If the address can call [update_debt](/src/debtAllocators/DebtAllocator.sol/contract.DebtAllocator.md#update_debt).|
+|`_allowed`|`bool`|If the address can call [update_debt](#update_debt).|
 
 ### setMaxDebtUpdateLoss
 
@@ -406,7 +406,7 @@ function setKeeper(address _address, bool _allowed) external virtual onlyGoverna
 |Name|Type|Description|
 |----|----|-----------|
 |`_address`|`address`|The address to set mapping for.|
-|`_allowed`|`bool`|If the address can call [update_debt](/src/debtAllocators/DebtAllocator.sol/contract.DebtAllocator.md#update_debt).|
+|`_allowed`|`bool`|If the address can call [update_debt](#update_debt).|
 
 ### getStrategyConfig
 
