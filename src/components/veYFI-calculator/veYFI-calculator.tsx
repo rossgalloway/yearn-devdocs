@@ -94,7 +94,7 @@ const VeYFICalculator: React.FC = () => {
         LiquidLockerContracts
       )
       setLiquidLockerBalances(fetchedLiquidLockerBalances || {})
-      console.log(fetchedLiquidLockerBalances)
+      console.log('fetchedLIquidLockerBalances: ', fetchedLiquidLockerBalances)
       setIsDataFetched(true)
     }
     fetchData()
@@ -176,6 +176,10 @@ const VeYFICalculator: React.FC = () => {
       const pricePerShare = tokenPriceData?.apr.pricePerShare.today
       console.log('pricePerShare: ', pricePerShare)
       const vaultSharePrice = pricePerShare * underlyingPrice
+      console.log(
+        `${selectedGauge.name} gauge TVL: `,
+        (selectedGauge.totalAssets * vaultSharePrice).toFixed(2)
+      )
       setSelectedVaultSharePrice(vaultSharePrice)
     }
   }
